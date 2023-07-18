@@ -1,7 +1,8 @@
 # Web-Development-S2-2023
-Intro To Web Dev Classroom
-19/07/2023
-Lec ~ Adon Moskal
+Intro To Web Dev Classroom                                                                                                        
+19/07/2023                                                                                                                        
+Lec ~ Adon Moskal        
+
 -----------------------------------------------
 
 Commit Format: 
