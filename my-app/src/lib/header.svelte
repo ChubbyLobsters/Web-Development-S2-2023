@@ -41,8 +41,36 @@
     </div>
   </div>
 </section>
-<style>
 
+<section id="hero3" class="hero">
+  <div class="inner">
+    <div class="copy">
+    <h1>Blank</h1>
+    <p>Blank ;)</p>
+    </div>
+  </div>
+</section>
+    
+<section class="content">
+  <div class="inner">
+    <div class="copy">
+    <h1>Blank</h1>
+      <p>Blank</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="hero4" class="hero">
+  <div class="inner">
+    <div class="copy">
+    <h1>Blank</h1>
+    <p>Blank ;)</p>
+    </div>
+  </div>
+</section>
+
+<style>
 html, body{
   margin:0px; padding:0px;
 }
@@ -86,6 +114,19 @@ header a{
   background-position:center center;
   background-attachment:fixed;
 }
+
+  #hero3{background: url(https://www.themoviedb.org/t/p/w1000_and_h563_face/3nQBeJkGv5B9R0NrUf6vpNwwdm2.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+}
+
+#hero4{background: url(https://www.themoviedb.org/t/p/original/nzx4GAaUSlws02D6buWeotIXuG0.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+}
+
 .hero, .content{
   text-align:center; 
   position:relative;
