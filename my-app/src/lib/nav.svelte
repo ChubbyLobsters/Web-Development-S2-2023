@@ -3,6 +3,21 @@
     // JavaScript code can be added here if needed
   </script>
 
+<header>
+  <div class="navWrapper" id="home">
+    <div class=" clearfix">
+      <h2 class="companyName">Company Name</h2>
+      <nav class="mainNav clearfix">
+        <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#work" class="smoothScroll">Work</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+        </nav>
+    </div>
+</header>
 
 <style>
  .clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } 
