@@ -1,7 +1,7 @@
-<!-- Header.svelte -->
 <script>
   // JavaScript code can be added here if needed
 </script>
+
 <header>
   <a href="https://media.senscritique.com/media/000019712106/source_big/Puparia.jpg" id="logo">Logo</a>
 </header>
@@ -9,8 +9,8 @@
 <section id="hero1" class="hero">
   <div class="inner">
     <div class="copy">
-    <h1>Blank</h1>
-    <p>Blank</p>
+      <h1>Blank</h1>
+      <p>Blank</p>
     </div>
   </div>
 </section>
@@ -18,8 +18,8 @@
 <section class="content">
   <div class="inner">
     <div class="copy">
-    <h1>Blank</h1>
-    <p>Blank </p>
+      <h1>Blank</h1>
+      <p>Blank</p>
     </div>
   </div>
 </section>
@@ -27,16 +27,16 @@
 <section id="hero2" class="hero">
   <div class="inner">
     <div class="copy">
-    <h1>Blank</h1>
-    <p>Blank ;)</p>
+      <h1>Blank</h1>
+      <p>Blank</p>
     </div>
   </div>
 </section>
-  
+
 <section class="content">
   <div class="inner">
     <div class="copy">
-    <h1>Blank</h1>
+      <h1>Blank</h1>
       <p>Blank</p>
     </div>
   </div>
@@ -45,132 +45,140 @@
 <section id="hero3" class="hero">
   <div class="inner">
     <div class="copy">
-    <h1>Blank</h1>
-    <p>Blank ;)</p>
-    </div>
-  </div>
-</section>
-    
-<section class="content">
-  <div class="inner">
-    <div class="copy">
-    <h1>Blank</h1>
+      <h1>Blank</h1>
       <p>Blank</p>
     </div>
   </div>
 </section>
 
+<section class="content">
+  <div class="inner">
+    <div class="copy">
+      <h1>Blank</h1>
+      <p>Blank</p>
+    </div>
+  </div>
+</section>
 
 <section id="hero4" class="hero">
   <div class="inner">
     <div class="copy">
-    <h1>Blank</h1>
-    <p>Blank ;)</p>
+      <h1>Blank</h1>
+      <p>Blank</p>
     </div>
   </div>
 </section>
 
 <style>
-html, body{
-  margin:0px; padding:0px;
-}
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
 
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
-header{
-  z-index: 1;
-  position:fixed; 
-  width:100%; 
-  height:60px; 
-  background:rgba(0,0,0,0.1);
-}
+  header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.1);
+  }
 
-header a{
-  color:white;
-  background:rgba(0,0,0,0.1); 
-  display:inline-block; 
-  padding:0px 30px; 
-  height:60px;
-  line-height:60px; 
-  text-align:center;
-  font-family: 'Roboto Slab', serif; 
-  text-decoration:none;
-  text-transform:uppercase; 
-  letter-spacing:2px; 
-  font-weight:700;
-}
-#hero1{
- background:url(https://media.senscritique.com/media/000019712106/source_big/Puparia.jpg);
-  background-size:cover;
-  background-position:center center;
-  background-attachment:fixed;
-}
-#hero2{background: url(https://th.bing.com/th/id/R.af4bc0687935b7eaf46b53403fb472e3?rik=slJq7xZgGAF8Qw&pid=ImgRaw&r=0);
-  background-size:cover;
-  background-position:center center;
-  background-attachment:fixed;
-}
+  header a {
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 0px 30px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
 
-  #hero3{background: url(https://www.themoviedb.org/t/p/w1000_and_h563_face/3nQBeJkGv5B9R0NrUf6vpNwwdm2.jpg);
-  background-size:cover;
-  background-position:center center;
-  background-attachment:fixed;
-}
+  .hero,
+  .content {
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
 
-#hero4{background: url(https://www.themoviedb.org/t/p/original/nzx4GAaUSlws02D6buWeotIXuG0.jpg);
-  background-size:cover;
-  background-position:center center;
-  background-attachment:fixed;
-}
+  .inner {
+    min-height: 600px;
+    position: relative;
+  }
 
-.hero, .content{
-  text-align:center; 
-  position:relative;
-  width: 100%;
-}
+  .hero .inner {
+    background: rgba(0, 0, 0, 0.363) url() repeat;
+  }
 
-.inner{
-  min-height:600px;
-  position: relative;
-}
+  .copy {
+    position: absolute;
+    top: 50%;
+    height: 10em;
+    margin-top: -5em;
+    width: 100%;
+  }
 
-.hero .inner{
-  background: rgba(0, 0, 0, 0.363) url() repeat;}
+  .hero h1,
+  .hero p {
+    color: #fff;
+  }
 
+  .content h1,
+  .content p {
+    color: #333;
+  }
 
-.copy{
-  position:absolute; 
-  top:50%; 
-  height:10em; 
-  margin-top:-5em; 
-  width:100%;
-}
+  h1 {
+    margin: 0px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 32px;
+    padding: 0px 20px;
+  }
 
-.hero h1, .hero p{ 
-  color:#fff;
-}
+  p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    padding: 0px 20px;
+  }
 
-.content h1, .content p{
-  color:#333;
-}
+  #hero1,
+  #hero2,
+  #hero3,
+  #hero4 {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; /* Use the cover value to fit both width and height */
+  }
 
-h1{
-  margin:0px;
-  font-family: 'Roboto Slab', serif;
-  font-weight:400;
-  font-size:32px;
-  padding:0px 20px;
-}
+  #hero1 {
+    background-image: url("../lib/titlefix.png");
+    height: 100vh; /* Set initial height to full viewport height */
+  }
 
-p{
-  font-family: 'Noto Sans', sans-serif; 
-  font-size:14px;
-  padding:0px 20px;
-}
+  #hero2 {
+    background-image: url("../lib/titlefix.png");
+    background-position: center calc(25% + 60px); /* Adjust the value as needed */
+  }
 
- 
-</style>
+  #hero3 {
+    background-image: url("../lib/titlefix.png");
+    background-position: center calc(50% + 60px); /* Adjust the value as needed */
+  }
+
+  #hero4 {
+    background-image: url("../lib/titlefix.png");
+    background-position: center calc(75% + 60px);
+  }
+
+</style>  
