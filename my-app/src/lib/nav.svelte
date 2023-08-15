@@ -14,6 +14,10 @@
   margin: 0 auto;
 }
 
+.innerWrapper {
+  max-width: 920px;
+  margin: 0 auto;
+}
 
 
 </style>
