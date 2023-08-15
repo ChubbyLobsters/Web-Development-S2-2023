@@ -29,7 +29,7 @@
     loop();
   </script>
   
-  <p id="loading">LOADING</p>
+  <p id="loading" class:glowing={true}>LOADING</p>
   <div id="container">
     {#each arms as arm, i}
       <div class="arm" style="transform: rotate({arm.rotation}deg); transition: {arm.transition}s ease-out;">
@@ -37,6 +37,7 @@
       </div>
     {/each}
   </div>
+  
 <style>
 @import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
 
@@ -114,9 +115,23 @@ a:hover {
 	height: 6px;
 	border-radius: 100px;
 	opacity: .2;
-	background: rgb(253, 2, 2);
+	background: rgb(245, 39, 39);
 }
 
+.glowing {
+    animation: glow 2s infinite alternate;
+  }
+
+  @keyframes glow {
+    0% {
+      color: black;
+      text-shadow: none;
+    }
+    100% {
+      color: red;
+      text-shadow: 0 0 10px red;
+    }
+  }
 
 
 </style>
