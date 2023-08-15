@@ -5,7 +5,7 @@
 
 
 <style>
- .clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+ .clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } 
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  }
 
@@ -19,7 +19,16 @@
   margin: 0 auto;
 }
 
+h2, h4 {
+  font-family: 'Abril Fatface', serif;
+}
 
+h2 {
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0 0 30px 0;
+}
 </style>
 
 
