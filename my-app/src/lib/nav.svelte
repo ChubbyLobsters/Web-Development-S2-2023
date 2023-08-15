@@ -52,15 +52,43 @@ nav {
 }
 
 header nav ul {
-  /* Your header nav ul styles */
+  float: right;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-right: 20px solid rgba(0,0,0,0.7);
 }
 
+
 header nav ul li {
-  /* Your header nav ul li styles */
+  float: left;
+  margin: 0;
+  display: inline;
+  width: 25%;
+  text-align: center;
+  background: rgba(0,0,0,0.7);
+}
+
+header nav ul li:hover {
+  background: none;
+  font-style: bold;
+  transform: scale(1.2);
 }
 
 header nav ul li a {
-  /* Your header nav ul li a styles */
+  text-decoration: none;
+  padding: 25px 20px;
+  color: #fff;
+  margin: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+}
+
+header nav ul li a:focus {
+  outline: none;
 }
 </style>
 
