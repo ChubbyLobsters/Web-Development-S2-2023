@@ -31,11 +31,24 @@ h2 {
 }
 
 .companyName {
-  /* Your .companyName styles */
+  padding: 21px 17px 20px 15%;
+  margin: 0;
+  float: left;
+  color: #fff;
+  width: 45%;
+  background: rgba(0,0,0,0.7);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: left;
+  font-variant: small-caps;
 }
 
 nav {
-  /* Your nav styles */
+  padding: 0;
+  margin: 0;
+  width: 55%;
+  float: right;
 }
 
 header nav ul {
