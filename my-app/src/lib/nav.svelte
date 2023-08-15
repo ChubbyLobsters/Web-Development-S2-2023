@@ -29,6 +29,26 @@ h2 {
   padding-top: 100px;
   margin: 0 0 30px 0;
 }
+
+.companyName {
+  /* Your .companyName styles */
+}
+
+nav {
+  /* Your nav styles */
+}
+
+header nav ul {
+  /* Your header nav ul styles */
+}
+
+header nav ul li {
+  /* Your header nav ul li styles */
+}
+
+header nav ul li a {
+  /* Your header nav ul li a styles */
+}
 </style>
 
 
