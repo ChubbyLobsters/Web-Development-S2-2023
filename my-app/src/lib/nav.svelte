@@ -14,6 +14,9 @@
             <li><a href="#contact" class="smoothScroll">Contact</a></li>
           </ul>
         </nav>
+        <div class="logo-container">
+          <img class="logo" src="src/lib/logo.png" alt="Logo" />
+        </div>
       </nav>
     </div>
   </div>
@@ -104,5 +107,17 @@
     background-color: rgba(0, 0, 0, 7);
   }
 
+  .logo-container {
+    display: flex; align-items: center; /* Center vertically */ 
+    justify-content: center; /* Center horizontally */ 
+    height: 100%; 
+    padding-right: 230px;
+  }
 
+
+    /* Add this style for the logo */ 
+    .logo { 
+         max-width: 230px; /* Adjust the size as needed */
+         padding-top: 3.5px;
+              }
 </style>
