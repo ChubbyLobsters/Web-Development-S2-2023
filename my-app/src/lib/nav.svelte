@@ -1,16 +1,15 @@
 <script>
-  // JavaScript code can be added here if needed
 </script>
 
 <header>
   <div class="navWrapper" id="home">
     <div class="clearfix">
-      <h2 class="companyName no-margin">Company Name</h2>
+      <h2 class="companyName no-margin">Forgotten Dreams</h2>
       <nav class="mainNav clearfix">
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#work" class="smoothScroll">Work</a></li>
+            <li><a href="#work" class="smoothScroll">Gallery</a></li>
             <li><a href="#about" class="smoothScroll">About</a></li>
             <li><a href="#contact" class="smoothScroll">Contact</a></li>
           </ul>
@@ -104,4 +103,6 @@
   header {
     background-color: rgba(0, 0, 0, 7);
   }
+
+
 </style>

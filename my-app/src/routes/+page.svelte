@@ -4,8 +4,6 @@
     import Sidebar from "../lib/sidebar.svelte";
     import Nav from "../lib/nav.svelte";
   </script>
+  
+<Nav />
 
-
-
-<h1>Welcome</h1>
-<p>This is the begginning of my site</p>
