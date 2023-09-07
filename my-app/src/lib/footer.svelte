@@ -12,12 +12,13 @@
   }
   /* copyright font */
   p {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 16px;
+    color: #d6d6d6;
   }
   /* footer details */
   footer {
-    background-color: #fffffff6;
+    background-color: rgba(0,0,0,0.7);
     text-align: center;
     padding: 20px;
   }
@@ -27,7 +28,7 @@
   }
   /* footer aspects details */
   .footer-links a {
-    color: #333;
+    color: #fffefe;
     text-decoration: none;
     margin: 0 20px;
     border-bottom: 2px solid transparent;
@@ -35,13 +36,13 @@
   }
   /* footer assests effects */
   .footer-links a:hover {
-    border-bottom-color: #000000;
+    border-bottom-color: #d6d6d6;
     transform: scale(1.1);
     opacity: 0.7;
   }
   /* logo details */
   .logo {
-    max-width: 95px;
+    max-width: 105px;
     transition: transform 0.4s ease;
   }
   /* logo hover effects */
@@ -57,6 +58,6 @@
     <a href="/about"><i class="fas fa-info-circle logo"></i></a>
     <a href="/contact"><i class="fas fa-envelope logo"></i></a>
   </div>
-  <p>&copy; 2023 Cameron Yeoman. All rights reserved.</p>
+  <p>&copy; 2023 Forgotten Dreams. All rights reserved.</p>
 </footer>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
