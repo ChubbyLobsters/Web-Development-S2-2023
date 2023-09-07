@@ -6,3 +6,4 @@
   </script>
 <Nav />
 <Header />
+<Footer />
