@@ -6,6 +6,7 @@
   </script>
 
 
-
+<Header />
 <h1>Welcome</h1>
 <p>This is the begginning of my site</p>
+<Footer />
