@@ -4,7 +4,13 @@
 <header>
   <div class="navWrapper" id="home">
     <div class="clearfix">
-      <h2 class="companyName no-margin">Forgotten Dreams</h2>
+      <!-- Move the header content to the left -->
+      <div class="headerLeft">
+        <div class="companyName no-margin">Forgotten Dreams
+          <div class="yearText">coming 2025</div>
+        </div>
+      </div>
+
       <nav class="mainNav clearfix">
         <nav>
           <ul>
@@ -15,7 +21,7 @@
           </ul>
         </nav>
         <div class="logo-container">
-          <img class="logo" src="src/lib/logo.png" alt="Logo" />
+          <img class="logo" src="images/logo.png" alt="Logo" />
         </div>
       </nav>
     </div>
@@ -23,32 +29,21 @@
 </header>
 
 <style>
-  .clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } 
+  .clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 
-  * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  }
+  * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-  .innerWrapper {
-    max-width: 920px;
-    margin: 0 auto;
-  }
-
-  h2, h4 {
-    font-family: 'Abril Fatface', serif;
-  }
-
-  h2 {
-    font-size: 5rem;
-    text-align: center;
-    padding-top: 100px;
-    margin: 0 0 30px 0;
+  .yearText {
+    font-size: 0.6rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
   }
 
   .companyName {
-    padding: 21px 17px 20px 15%;
-    margin: 0;
+    padding: 21px 17px 10px 1.5%;
     float: left;
     color: #fff;
-    width: 45%;
+    width: 30%;
     background: rgba(0,0,0,0.7);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -84,13 +79,12 @@
 
   header nav ul li:hover {
     background: none;
-    font-style: bold;
     transform: scale(1.2);
   }
 
   header nav ul li a {
     text-decoration: none;
-    padding: 25px 20px;
+    padding: 30px 20px;
     color: #fff;
     margin: 0;
     display: inline-block;
@@ -108,16 +102,16 @@
   }
 
   .logo-container {
-    display: flex; align-items: center; /* Center vertically */ 
-    justify-content: center; /* Center horizontally */ 
-    height: 100%; 
-    padding-right: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-right: 300px;
   }
 
+  .logo {
+    max-width: 230px;
+    padding-top: 3.5px;
+  }
 
-    /* Add this style for the logo */ 
-    .logo { 
-         max-width: 230px; /* Adjust the size as needed */
-         padding-top: 3.5px;
-              }
 </style>
