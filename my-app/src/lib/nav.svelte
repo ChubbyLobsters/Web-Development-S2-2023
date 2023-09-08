@@ -14,10 +14,10 @@
       <nav class="mainNav clearfix">
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#work" class="smoothScroll">Gallery</a></li>
-            <li><a href="#about" class="smoothScroll">About</a></li>
-            <li><a href="#contact" class="smoothScroll">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
         <div class="logo-container">

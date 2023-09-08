@@ -3,7 +3,7 @@
 </script>
 
 <footer> 
-  <img class="logo" src="src/lib/logo.png" alt="Our Company Logo" />
+  <img class="logo" src="images/logo.png" alt="Logo" />
   <div class="footer-links">
     <a href="/"><i class="fas fa-home logo"></i></a>
     <a href="/about"><i class="fas fa-info-circle logo"></i></a>
@@ -28,7 +28,7 @@
   }
  
   footer {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.897);
     text-align: center;
     padding: 20px;
   }
