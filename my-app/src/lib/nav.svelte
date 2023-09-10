@@ -43,15 +43,15 @@
   .yearText {
     font-size: 0.6rem;
     font-family: 'Josefin Sans', sans-serif;
-    color: #fff;
+    color: #000000;
   }
 
   .companyName {
     padding: 21px 17px 10px 1.5%;
     float: left;
-    color: #fff;
+    color: #000000;
     width: 30%;
-    background: rgba(0,0,0,0.7);
+    background: rgb(255, 255, 255);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
@@ -72,7 +72,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    border-right: 20px solid rgba(0,0,0,0.7);
+    border-right: 20px solid rgb(255, 255, 255);
   }
 
   header nav ul li {
@@ -81,7 +81,7 @@
     display: inline;
     width: 25%;
     text-align: center;
-    background: rgba(0,0,0,0.7);
+    background: rgb(255, 255, 255);
   }
 
   header nav ul li:hover {
@@ -92,7 +92,7 @@
   header nav ul li a {
     text-decoration: none;
     padding: 30px 20px;
-    color: #fff;
+    color: #000000;
     margin: 0;
     display: inline-block;
     text-transform: uppercase;
@@ -105,7 +105,7 @@
   }
 
   header {
-    background-color: rgba(0, 0, 0, 7);
+    background-color: rgb(255, 255, 255);
   }
 
   .logo-container {
