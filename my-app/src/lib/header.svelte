@@ -2,9 +2,7 @@
 </script>
 
 <header class="header">
-  <div class="header-text">
-    F  O  R  G  O  T  T  E  N
-  </div>
+
 </header>
 
 <style>
@@ -22,8 +20,4 @@
       border-radius: 20px;
 
     }
-    .header-text {
-      font-size: 10rem
-    }
-  
 </style>
