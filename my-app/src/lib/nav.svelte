@@ -118,7 +118,7 @@
   }
 
   .logo {
-    max-width: 270px;
+    max-width: 340px;
     padding-top: 3.5px;
   }
 
