@@ -7,21 +7,23 @@
   </div>
 </header>
 
-
 <style>
    .header {
-      background-image: url('https://cms.shadowandact.com/wp-content/uploads/2017/03/yasuke-10.jpg');
-      background-size:cover;
+      background-image: url('images/imageOne.JPG');
+      background-size:contain;
       background-position: center;
       background-repeat: no-repeat;
-      height: 100vh;
+      height: 550px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       color: #000000;
+      border-radius: 20px;
+
     }
     .header-text {
-      font-size: 10rem;
+      font-size: 10rem
     }
+  
 </style>

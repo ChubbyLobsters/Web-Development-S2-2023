@@ -28,7 +28,7 @@
           </ul>
         </nav>
         <div class="logo-container">
-          <img class="logo" src="images/logo.png" alt="Logo" />
+          <img class="logo" src="images/logo.JPG" alt="Logo" />
         </div>
       </nav>
     </div>
@@ -63,6 +63,7 @@
     padding: 0;
     margin: 0;
     width: 55%;
+    height:400px;
     float: right;
   }
 
@@ -117,7 +118,7 @@
   }
 
   .logo {
-    max-width: 230px;
+    max-width: 270px;
     padding-top: 3.5px;
   }
 
