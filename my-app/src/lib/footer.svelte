@@ -3,7 +3,7 @@
 </script>
 
 <footer> 
-  <img class="logo" src="images/logo.png" alt="Logo" />
+  <img class="logo" src="images/logo.JPG" alt="Logo" />
   <div class="footer-links">
     <a href="/"><i class="fas fa-home logo"></i></a>
     <a href="/about"><i class="fas fa-info-circle logo"></i></a>
@@ -24,11 +24,11 @@
   p {
     font-size: 14px;
     margin-top: 16px;
-    color: #d6d6d6;
+    color: #000000;
   }
  
   footer {
-    background-color: rgba(0, 0, 0, 0.897);
+    background-color: rgba(255, 255, 255, 0.897);
     text-align: center;
     padding: 20px;
   }
@@ -38,7 +38,7 @@
   }
  
   .footer-links a {
-    color: #fffefe;
+    color: #000000;
     text-decoration: none;
     margin: 0 20px;
     border-bottom: 2px solid transparent;
@@ -46,7 +46,7 @@
   }
 
   .footer-links a:hover {
-    border-bottom-color: #d6d6d6;
+    border-bottom-color: #808080;
     transform: scale(1.1);
     opacity: 0.7;
   }

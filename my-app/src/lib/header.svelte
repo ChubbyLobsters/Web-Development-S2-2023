@@ -11,7 +11,7 @@
       background-size:contain;
       background-position: center;
       background-repeat: no-repeat;
-      height: 550px;
+      height: 450px;
       display: flex;
       flex-direction: column;
       justify-content: center;

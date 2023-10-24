@@ -4,8 +4,7 @@
     import Sidebar from "../lib/sidebar.svelte";
     import Nav from "../lib/nav.svelte";
   </script>
-<Nav />
-<Header />
+
 <main>
 	<section id="section-1">
 		<h2>
@@ -26,7 +25,6 @@
 	</section>
 </main>
 
-<Footer />
 
 <style>
 	section {
