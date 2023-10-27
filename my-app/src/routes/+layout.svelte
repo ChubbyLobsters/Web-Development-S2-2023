@@ -6,14 +6,6 @@
      </script>
 
 <Loading />
-
 <Nav />
-
-
-<Header />
-
-
 <slot />
-
-
 <Footer />

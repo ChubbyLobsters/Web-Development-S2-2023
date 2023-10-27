@@ -3,7 +3,7 @@
 </script>
 
 <footer> 
-  <img class="logo" src="images/logo.JPG" alt="Logo" />
+  <img class="logo" src="logo.jpg" alt="Logo" />
   <div class="footer-links">
     <a href="/"><i class="fas fa-home logo"></i></a>
     <a href="/about"><i class="fas fa-info-circle logo"></i></a>
@@ -54,6 +54,7 @@
   .logo {
     max-width: 105px;
     transition: transform 0.4s ease;
+    position: center;
   }
 
   .logo:hover {
