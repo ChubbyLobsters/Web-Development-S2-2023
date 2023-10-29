@@ -1,8 +1,6 @@
 <script>
     import Header from "../lib/header.svelte";
-    import Footer from "../lib/footer.svelte";
-    import Nav from "../lib/nav.svelte";
-    import Loading from "../lib/loading.svelte";
+	// import Gallary from "../lib/gallary.svelte";
   </script>
   
  <Header />
@@ -12,12 +10,14 @@
 		<h2>
 			Section 1
 		</h2>
+	<!-- <Gallary /> -->
 	</section>
 
 	<section id="section-2">
 		<h2>
 			Section 2
 		</h2>
+
 	</section>
 
 	<section id="section-3">
