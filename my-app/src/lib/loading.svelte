@@ -4,7 +4,7 @@
   // Simulate loading for demonstration purposes
   setTimeout(() => {
     isLoading = false;
-  }, 7000); 
+  }, 7000);
 </script>
 
 {#if isLoading}
@@ -25,16 +25,15 @@
     align-items: center;
     justify-content: center;
     z-index: 9999;
-    opacity: 1; /* Initially, the overlay is fully visible */
-    animation: fadeInOut 8s linear; 
+    animation: fadeInOut 8s linear forwards; /* Use "forwards" to keep final state */
+    pointer-events: none; /* Disable interaction for the entire overlay */
   }
 
   .centered-image {
     width: 250px;
     height: auto; /* Maintain aspect ratio */
-    opacity: 0; 
-    animation: fadeInImage 5s linear; 
-    animation-fill-mode: forwards; /* Keeps the final state of opacity */
+    opacity: 0;
+    animation: fadeInImage 5s linear forwards; /* Use "forwards" to keep final state */
   }
 
   /* CSS animation for image fade-in */
@@ -49,12 +48,14 @@
 
   /* CSS animation for overlay fade-in and fade-out */
   @keyframes fadeInOut {
-    0%, 100% {
-      opacity: 1; /* Start and end with full opacity */
+    0% {
+      opacity: 1;
     }
     99% {
       opacity: 0; /* Almost immediately go to full transparency */
     }
+    100% {
+      opacity: 0; /* Ensure opacity stays at 0 after animation */
+    }
   }
 </style>
-

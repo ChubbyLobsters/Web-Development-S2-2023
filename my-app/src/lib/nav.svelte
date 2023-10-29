@@ -14,7 +14,7 @@
         <nav>
           <ul class="left-links"> 
             <li><a href="/">Home</a></li>
-            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/gallery-index">Gallery</a></li>
           </ul>
           <div class="logo-container">
             <img class="logo" src="logo.jpg" alt="Logo" />
