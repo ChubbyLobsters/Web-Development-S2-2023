@@ -1,6 +1,6 @@
 <script>
     let bio = "a brief description.";
-    let imageUrl = "image.jpg"; // Replace with the URL of your image.
+    let imageUrl = "outfitOne.jpg"; // Replace with the URL of your image.
 </script>
 
 <main>
@@ -24,7 +24,8 @@
         border: 1px solid #ccc;
         border-radius: 8px;
         padding: 20px;
-        max-width: 900px;
+        width: 1500px;
+        height:900px;
         margin: 0 auto;
         background-color: #f5f5f5;
     }

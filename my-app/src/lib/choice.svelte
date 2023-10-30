@@ -1,11 +1,11 @@
 <script>
     // Define the routes for the buttons
-    let route1 = "/route1";
-    let route2 = "/route2";
+    let route1 = "/gallery-index";
+    let route2 = "/card";
   
     // Define the image sources for the buttons
-    let imageSrc1 = "button1.jpg";
-    let imageSrc2 = "button2.jpg"; 
+    let imageSrc1 = "butOne.png";
+    let imageSrc2 = "butTwo.png"; 
   </script>
   
   <main>
