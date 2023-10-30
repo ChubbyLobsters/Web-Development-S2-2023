@@ -1,5 +1,6 @@
 <script>
-	import { onMount, afterUpdate } from 'svelte';
+	import { onMount, afterUpdate } from 'svelte'; 	
+	let active = false;
 	let cards = [];
 	let currentPage = 1;
 	let cardsPerPage = 8; // 8 cards per page
@@ -27,6 +28,7 @@
 	}
 
 	function getRandomCard() {
+		active = !active;
 		// Generate a random index to pick a random card
 		const randomIndex = Math.floor(Math.random() * cards.length);
 		randomCard = cards[randomIndex];
@@ -58,12 +60,18 @@
 	{/each}
 </div>
 
+
+{#if active}
+<img src={randomCard.imageUrl} class="randomCard"  />
+{/if}
+
 <div class="buttons">
 	<button class="button {currentPage === 1 ? 'disabled' : ''}" on:click={prevPage} disabled={currentPage === 1}>Previous Page</button>
 	<button class="button {currentPage * cardsPerPage >= cards.length ? 'disabled' : ''}" on:click={nextPage} disabled={currentPage * cardsPerPage >= cards.length}>Next Page</button>
+	<div class="button randomize" on:click={getRandomCard}>Show Random Card</div>
 </div>
 
-<!-- <div class="button randomize" on:click={getRandomCard}>Show Random Card</div> -->
+
 
 
 <style>
@@ -116,12 +124,15 @@
 	  transition: opacity 0.3s;
 	}
   
-	.button.randomize {
-	  margin-top: 20px;
-	}
+
   
 	.button.disabled {
 	  opacity: 0.3;
 	  pointer-events: none;
+	}
+
+	.randomCard {
+	position:fixed ;
+	justify-content: center;
 	}
   </style>
