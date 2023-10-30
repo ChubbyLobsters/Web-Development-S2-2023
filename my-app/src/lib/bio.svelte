@@ -1,6 +1,12 @@
 <script>
-    let bio = "a brief description.";
-    let imageUrl = "outfitOne.jpg"; // Replace with the URL of your image.
+    let bio = "A key street style takeaway from January’s Paris menswear shows: trail running sneakers (mostly those from Salomon) are not A key street style takeaway from January’s Paris menswear shows: trail running sneakers (mostly those from Salomon) are not";
+    let bio2 = "A key street style takeaway from January’s Paris menswear shows: trail running sneakers (mostly those from Salomon) are not A key street style takeaway from January’s Paris menswear shows: trail running sneakers (mostly those from Salomon) are not";
+    let bio3 = "A key street style takeaway from January’s Paris menswear shows: trail running sneakers (mostly those from Salomon) are not A key street style takeaway from January’s Paris menswear shows: trail running sneakers (mostly those from Salomon) are not";
+    let bio4 = "A key street style takeaway from January’s Paris menswear shows: trail running sneakers (mostly those from Salomon) are not A key street style takeaway from January’s Paris menswear shows: trail running sneakers (mostly those from Salomon) are not";
+    let bio5 = "A key street style takeaway from January’s Paris menswear shows: trail running sneakers (mostly those from Salomon) are not A key street style takeaway from January’s Paris menswear shows: trail running sneakers (mostly those from Salomon) are not";
+    let bio6 = "A key street style takeaway from January’s Paris menswear shows: trail running sneakers (mostly those from Salomon) are not A key street style takeaway from January’s Paris menswear shows: trail running sneakers (mostly those from Salomon) are not";
+   
+   let imageUrl = "outfitOne.jpg"; // Replace with the URL of your image.
 </script>
 
 <main>
@@ -9,6 +15,18 @@
             <img src={imageUrl} alt="Image" />
         </div>
         <div class="bio">
+            <p>{bio}</p>
+            <p>{bio2}</p>
+            <p>{bio3}</p>
+            <p>{bio4}</p>
+            <p>{bio5}</p>
+            <p>{bio6}</p>
+            <p>{bio}</p>
+            <p>{bio2}</p>
+            <p>{bio3}</p>
+            <p>{bio4}</p>
+            <p>{bio5}</p>
+            <p>{bio6}</p>
             <p>{bio}</p>
         </div>
     </div>
@@ -25,7 +43,7 @@
         border-radius: 8px;
         padding: 20px;
         width: 1500px;
-        height:900px;
+        height:px;
         margin: 0 auto;
         background-color: #f5f5f5;
     }
