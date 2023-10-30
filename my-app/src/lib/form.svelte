@@ -43,7 +43,7 @@
     });
   </script>
   
-
+  <div class="bg-img">
   <main>
     {#if submissionStatus}
       <p>{submissionStatus}</p>
@@ -51,7 +51,7 @@
     <form on:submit={handleSubmit}>
       <label for="name">Name:</label>
       <input type="text" id="name" bind:value={formData.name} required />
-  
+
       <label for="email">Email:</label>
       <input type="email" id="email" bind:value={formData.email} required />
   
@@ -61,17 +61,36 @@
       <button type="submit">Submit</button>
     </form>
   </main>
-  
+</div>
+
+
+
 
   <style>
+ 
+
     main {
       text-align: center;
+
     }
   
     form {
-      max-width: 400px;
-      margin: 0 auto;
-      text-align: left;
+      max-width: 200px;
+      margin: auto;
+      text-align: middle;
+      padding-left: 400px;
+      margin-top:300px;
+
     }
+
+    .bg-img {
+  background-image: url("form.JPG");
+  height: 800px;
+  width: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
   </style>
   

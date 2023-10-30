@@ -38,6 +38,8 @@
         background: linear-gradient(to bottom, black, lightgray, white);
     }
 
+ 
+
     h2 {
         font-size: 2rem;
     }
