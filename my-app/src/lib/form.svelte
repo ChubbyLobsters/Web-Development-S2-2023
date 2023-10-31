@@ -84,7 +84,7 @@
     }
 
     .bg-img {
-  background-image: url("form.JPG");
+  background-image: url("form.jpg");
   height: 800px;
   width: 80%;
   background-position: center;
