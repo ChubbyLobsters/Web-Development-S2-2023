@@ -1,4 +1,5 @@
-
-    <h2>
-        Section 1
-    </h2>
+<script>
+    import Layout from '../../lib/Gallarys/layoutElysian.svelte';
+  </script>
+  
+  <Layout />
