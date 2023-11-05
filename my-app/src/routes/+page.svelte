@@ -29,17 +29,7 @@
         align-items: center;
         justify-content: center;
     }
-
-    #section-1 {
-        background: linear-gradient(to bottom, white, lightgray, black);
-    }
-
-    #section-2 {
-        background: linear-gradient(to bottom, black, lightgray, white);
-    }
-
  
-
     h2 {
         font-size: 2rem;
     }

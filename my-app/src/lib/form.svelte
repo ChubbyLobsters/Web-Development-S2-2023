@@ -41,56 +41,61 @@
         };
       }
     });
-  </script>
+</script>
+
+<style>
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   
-  <div class="bg-img">
+    form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    .bg-img {
+      background-image: url("form.jpg");
+      height: 800px;
+      width: 80%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+</style>
+
+<div class="bg-img">
   <main>
     {#if submissionStatus}
       <p>{submissionStatus}</p>
     {/if}
     <form on:submit={handleSubmit}>
-      <label for="name">Name:</label>
-      <input type="text" id="name" bind:value={formData.name} required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" bind:value={formData.email} required />
-  
+      <div class="input-group">
+        <div class="left">
+          <label for="name">Name:</label>
+          <input type="text" id="name" bind:value={formData.name} required />
+        </div>
+        <div class="right">
+          <label for="email">Email:</label>
+          <input type="email" id="email" bind:value={formData.email} required />
+        </div>
+      </div>
       <label for="message">Message:</label>
       <textarea id="message" bind:value={formData.message} required></textarea>
-  
       <button type="submit">Submit</button>
     </form>
   </main>
 </div>
-
-
-
-
-  <style>
- 
-
-    main {
-      text-align: center;
-
-    }
-  
-    form {
-      max-width: 200px;
-      margin: auto;
-      text-align: middle;
-      padding-left: 400px;
-      margin-top:300px;
-
-    }
-
-    .bg-img {
-  background-image: url("form.jpg");
-  height: 800px;
-  width: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-  </style>
-  
