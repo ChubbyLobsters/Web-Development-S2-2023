@@ -2,7 +2,7 @@
 </script>
 
 <header class="header">
-  <img src="header.jpg" alt="Header Image" />
+  <img src="images/main/header.jpg" alt="Header Image" />
 </header>
 
 <style>

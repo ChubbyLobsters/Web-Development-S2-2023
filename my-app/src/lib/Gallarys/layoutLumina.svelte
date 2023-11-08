@@ -1,12 +1,12 @@
 <script>
     let images = [
-      'Lumina1.jpeg',
-      'Lumina2.jpeg',
-      'Lumina3.jpeg',
-      'Lumina4.jpeg',
-      'Lumina5.jpeg',
+      'images/lumina/Lumina1.jpeg',
+      'images/lumina/Lumina2.jpeg',
+      'images/lumina/Lumina3.jpeg',
+      'images/lumina/Lumina4.jpeg',
+      'images/lumina/Lumina5.jpeg',
     ];
-  
+    
     // Function to preload images
     async function preloadImages() {
       for (const image of images) {

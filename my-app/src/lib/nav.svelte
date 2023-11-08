@@ -17,7 +17,7 @@
             <li><a href="/gallery-index">Gallery</a></li>
           </ul>
           <div class="logo-container">
-            <img class="logo" src="logo.jpg" alt="Logo" />
+            <img class="logo" src="images/main/logo.jpg" alt="Logo" />
           </div>
           <ul class="right-links"> 
             <li><a href="#section-1" on:click|preventDefault={scrollIntoView}>About</a></li>

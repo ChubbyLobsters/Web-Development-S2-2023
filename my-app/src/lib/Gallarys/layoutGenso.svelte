@@ -1,6 +1,6 @@
 <script>
     let images = [
-      'outfitOne.jpg',
+      'images/genso/outfitOne.jpg',
     ];
   
     // Function to preload images

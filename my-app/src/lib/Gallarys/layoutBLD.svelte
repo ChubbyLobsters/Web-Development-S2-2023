@@ -1,11 +1,11 @@
 <script>
     let images = [
-      'BLD1.png',
-      'BLD12.png',
-      'BLD2.png',
-      'BLD3.png',
-      'BLD4.png',
-      'BLD5.png',
+      'images/bld/BLD1.png',
+      'images/bld/BLD12.png',
+      'images/bld/BLD2.png',
+      'images/bld/BLD3.png',
+      'images/bld/BLD4.png',
+      'images/bld/BLD5.png',
     ];
   
     // Function to preload images

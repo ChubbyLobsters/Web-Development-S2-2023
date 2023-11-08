@@ -9,7 +9,7 @@
 
 {#if isLoading}
   <div id="loading-overlay" class="fade-in-out">
-    <img src="loading.gif" alt="Loading Animation" class="centered-image" />
+    <img src="images/main/loading.gif" alt="Loading Animation" class="centered-image" />
   </div>
 {/if}
 

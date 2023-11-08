@@ -1,12 +1,12 @@
 <script>
   // Define an array of words with corresponding routes
   let words = [
-    { text: "Elysian Echoes: Chronicles of the Fallen Seraph", route: "/Elysian", imgSrc: "one.jpg", imgHoverSrc: "oneHoverd.jpg" },
-    { text: "BLOOD LUST DEATH", route: "/BLD", imgSrc: "two.jpg", imgHoverSrc: "twoHoverd.jpg" },
-    { text: "幻想的なカオス (Gensō-tekina Kaosu)", route: "/Genso", imgSrc: "three.jpg", imgHoverSrc: "threeHoverd.jpg" },
-    { text: "Lumina Noctis: Ethereal Rhapsodies of Psychedelic Dreamscape", route: "/Lumina", imgSrc: "four.jpg", imgHoverSrc: "fourHoverd.jpg" },
+    { text: "Elysian Echoes: Chronicles of the Fallen Seraph", route: "/Elysian", imgSrc: "images/index/one.jpg", imgHoverSrc: "images/index/oneHoverd.jpg" },
+    { text: "BLOOD LUST DEATH", route: "/BLD", imgSrc: "images/index/two.jpg", imgHoverSrc: "images/index/twoHoverd.jpg" },
+    { text: "幻想的なカオス (Gensō-tekina Kaosu)", route: "/Genso", imgSrc: "images/index/three.jpg", imgHoverSrc: "images/index/threeHoverd.jpg" },
+    { text: "Lumina Noctis: Ethereal Rhapsodies of Psychedelic Dreamscape", route: "/Lumina", imgSrc: "images/index/four.jpg", imgHoverSrc: "images/index/fourHoverd.jpg" },
   ];
-
+  
   // Store the currently hovered route
   let currentHoverRoute = "";
 
@@ -77,7 +77,7 @@
 
 <!-- Add the top image below the navigation -->
 <div class="centered-words">
-  <img class="top-image" src="top.jpg" alt="Top Image">
+  <img class="top-image" src="images/index/top.jpg" alt="Top Image">
   <ul>
     {#each words as word (word.route)}
       <li>
@@ -91,5 +91,5 @@
 
 <!-- Add the bottom image below the footer -->
 <div class="centered-images">
-  <img src="bottom.jpg" alt="Bottom Image">
+  <img src="images/index/bottom.jpg" alt="Bottom Image">
 </div>

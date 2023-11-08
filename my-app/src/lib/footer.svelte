@@ -3,7 +3,7 @@
 </script>
 
 <footer> 
-  <img class="logo" src="logo.jpg" alt="Logo" />
+  <img class="logo" src="images/main/logo.jpg" alt="Logo" />
   <div class="footer-links">
     <a href="/"><i class="fas fa-home logo"></i></a>
     <a href="/about"><i class="fas fa-info-circle logo"></i></a>

@@ -1,9 +1,9 @@
 <script>
   let route1 = "/gallery-index";
   let route2 = "/card";
-  let imageSrc1 = "choice.jpg";
-  let imageSrc2 = "pick.jpg";
-  let imageSrc3 = "fate.jpg";
+  let imageSrc1 = "images/main/choice.jpg";
+  let imageSrc2 = "images/main/pick.jpg";
+  let imageSrc3 = "images/main/fate.jpg";
   let isHovered1 = false;
   let isHovered3 = false;
 
@@ -87,7 +87,7 @@
   <div class="button-section">
     <div class="image-box" on:mouseover={handleHover1} on:mouseout={handleUnhover1} on:focus={handleFocus1} on:blur={handleBlur1} role="button">
       <a href={route1}>
-        <img src={isHovered1 ? "choiceHover.jpg" : imageSrc1} alt="Choice" tabindex="0" aria-label="Choice" />
+        <img src={isHovered1 ? "images/main/choiceHover.jpg" : imageSrc1} alt="Choice" tabindex="0" aria-label="Choice" />
       </a>
     </div>
     
@@ -96,7 +96,7 @@
     </div>
     <div class="image-box" on:mouseover={handleHover3} on:mouseout={handleUnhover3} on:focus={handleFocus3} on:blur={handleBlur3} role="button">
       <a href={route2}>
-        <img src={isHovered3 ? "fateHoverd.jpg" : imageSrc3} alt="Fate" tabindex="0" aria-label="Fate" />
+        <img src={isHovered3 ? "images/main/fateHoverd.jpg" : imageSrc3} alt="Fate" tabindex="0" aria-label="Fate" />
       </a>
     </div>
     
