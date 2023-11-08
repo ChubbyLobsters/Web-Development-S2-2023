@@ -29,8 +29,4 @@
         align-items: center;
         justify-content: center;
     }
- 
-    h2 {
-        font-size: 2rem;
-    }
 </style>

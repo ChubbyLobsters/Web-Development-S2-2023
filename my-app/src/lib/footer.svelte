@@ -1,25 +1,25 @@
 <!-- Footer.svelte -->
 <script>
+  function scrollIntoView(target) {
+    const el = document.querySelector(target);
+    el.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 </script>
 
 <footer> 
   <img class="logo" src="images/main/logo.jpg" alt="Logo" />
   <div class="footer-links">
-    <a href="/"><i class="fas fa-home logo"></i></a>
-    <a href="/about"><i class="fas fa-info-circle logo"></i></a>
-    <a href="/contact"><i class="fas fa-envelope logo"></i></a>
+    <a href="/" on:click|preventDefault={() => scrollIntoView("#home")}><i class="fas fa-home logo"></i></a>
+    <a href="/about" on:click|preventDefault={() => scrollIntoView("#section-2")}><i class="fas fa-info-circle logo"></i></a>
+    <a href="/contact" on:click|preventDefault={() => scrollIntoView("#section-3")}><i class="fas fa-envelope logo"></i></a>
   </div>
   <p>&copy; 2023 Forgotten Dreams. All rights reserved.</p>
 </footer>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <style>
-
-  body {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-  }
 
   p {
     font-size: 14px;

@@ -20,8 +20,8 @@
             <img class="logo" src="images/main/logo.jpg" alt="Logo" />
           </div>
           <ul class="right-links"> 
-            <li><a href="#section-1" on:click|preventDefault={scrollIntoView}>About</a></li>
-            <li><a href="#section-2" on:click|preventDefault={scrollIntoView}>Contact</a></li>
+            <li><a href="#section-3" on:click|preventDefault={scrollIntoView}>Contact</a></li>
+            <li><a href="#section-2" on:click|preventDefault={scrollIntoView}>About</a></li>
           </ul>
         </nav>
       </nav>
