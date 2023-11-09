@@ -1,6 +1,7 @@
 <script>
+  import SvelteLayout from '../+layout.svelte';
   import Layout from '../../lib/galleryIndex.svelte';
-  import Footer from "../../lib/routeFooter.svelte";
+ 
   let myImages = [
   'images/lumina/Lumina1.jpeg',
   'images/lumina/Lumina2.jpeg',
@@ -19,7 +20,6 @@
 
 <Layout images={myImages} altText="Custom Alt Text" />
 
-<Footer />
 <style>
 
 .profile-container {

@@ -1,6 +1,6 @@
 <script>
   import Layout from '../../lib/galleryIndex.svelte';
-  import Footer from "../../lib/routeFooter.svelte";
+
 
   let myImages = [
     'images/bld/BLD1.png',
@@ -32,7 +32,6 @@
   </div>
 </div>
 <Layout images={myImages} altText="Custom Alt Text" />
-<Footer />
 
 <style>
  .profile-container {

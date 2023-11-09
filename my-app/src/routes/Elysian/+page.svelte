@@ -1,6 +1,6 @@
 <script>
   import Layout from '../../lib/galleryIndex.svelte';
-  import Footer from "../../lib/routeFooter.svelte";
+
   let myImages = [
     'images/elysian/elysian5.jpg',
     'images/elysian/elysian3.png',
@@ -23,7 +23,6 @@
 </div>
 
 <Layout images={myImages} altText="Custom Alt Text" />
-<Footer />
 
 
 <style>

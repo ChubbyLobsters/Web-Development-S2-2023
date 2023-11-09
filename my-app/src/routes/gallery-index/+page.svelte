@@ -1,6 +1,6 @@
 <script>
 
-import Footer from "../../lib/routeFooter.svelte";
+
   // Define an array of words with corresponding routes
   let words = [
     { text: "Elysian Echoes: Chronicles of the Fallen Seraph", route: "/Elysian", imgSrc: "images/index/one.jpg", imgHoverSrc: "images/index/oneHoverd.jpg" },
@@ -37,7 +37,6 @@ import Footer from "../../lib/routeFooter.svelte";
   <img src="images/index/bottom.jpg" alt="Bottom Image">
 </div>
 
-<Footer />
 
 
 <style>

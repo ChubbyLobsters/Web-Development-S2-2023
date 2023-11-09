@@ -7,7 +7,6 @@
 </script>
 
 <Header />
-
 <main>
     <section id="section-1">
         <Choice />
@@ -21,7 +20,6 @@
 		<Form />
     </section>
 </main>
-<Footer />
 
 <style>
     section {
