@@ -1,14 +1,29 @@
 <script>
-  import { onMount } from "svelte";
-
   let name = "";
   let email = "";
   let message = "";
   let submissionStatus = null;
+
+  const handleSubmit = async () => {
+    if (submissionStatus === "Form Has Been Received") {
+      if (confirm("Another submission has been made. Are you sure you want to submit a new message?")) {
+        resetForm();
+      }
+    } else {
+      // Handle the form submission here
+      submissionStatus = "Form Has Been Received";
+    }
+  }
+
+  const resetForm = () => {
+    name = "";
+    email = "";
+    message = "";
+    submissionStatus = null;
+  }
 </script>
 
-
-<main>
+<main> 
   {#if submissionStatus}
     <p>{submissionStatus}</p>
   {/if}
@@ -22,21 +37,12 @@
     <label for="message">Message:</label>
     <textarea id="message" bind:value={message} required></textarea>
   
-    {#if submissionStatus === "Sending..."}
-      <button type="submit" disabled>Sending...</button>
-    {:else}
-      <button type="submit">Submit</button>
-    {/if}
-    
-    {#if submissionStatus === "Error sending your message."}
-      <p class="error-message">Error sending your message.</p>
-    {/if}
+    <button type="submit">Submit</button>
   </form>
 </main>
 
-
-<style>
-  main {  /* forms style sorced from stackOverflow */
+<style>   /* forms style sorced from stackOverflow */
+  main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +88,10 @@
     cursor: pointer;
   }
 
-  .error-message {
-    color: red;
+  p {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
   }
 </style>
