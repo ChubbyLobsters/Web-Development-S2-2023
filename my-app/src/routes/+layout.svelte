@@ -7,4 +7,3 @@
 <Loading />
 <Nav />
 <slot />
-<Footer />

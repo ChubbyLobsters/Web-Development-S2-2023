@@ -1,5 +1,6 @@
 <script>
   import Layout from '../../lib/galleryIndex.svelte';
+  import Footer from "../../lib/routeFooter.svelte";
   let myImages = [
   'images/genso/genso1.JPG',
   'images/genso/genso2.JPG',
@@ -29,6 +30,8 @@
 
 
 <Layout images={myImages} altText="Custom Alt Text" />
+
+<Footer />
 
 <style>
   .profile-container {

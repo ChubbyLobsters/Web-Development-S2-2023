@@ -1,4 +1,6 @@
 <script>
+
+import Footer from "../../lib/routeFooter.svelte";
   // Define an array of words with corresponding routes
   let words = [
     { text: "Elysian Echoes: Chronicles of the Fallen Seraph", route: "/Elysian", imgSrc: "images/index/one.jpg", imgHoverSrc: "images/index/oneHoverd.jpg" },
@@ -15,6 +17,28 @@
     currentHoverRoute = route;
   }
 </script>
+
+<!-- Add the top image below the navigation -->
+<div class="centered-words">
+  <img class="top-image" src="images/index/top.jpg" alt="Top Image">
+  <ul>
+    {#each words as word (word.route)}
+      <li>
+        <a href={word.route} class="word" on:mouseenter={() => handleImageHover(word.route)} on:mouseleave={() => currentHoverRoute = ""}>
+          <img src={word.route === currentHoverRoute ? word.imgHoverSrc : word.imgSrc} alt={word.text} />
+        </a>
+      </li>
+    {/each}
+  </ul>
+</div>
+
+<!-- Add the bottom image below the footer -->
+<div class="centered-images">
+  <img src="images/index/bottom.jpg" alt="Bottom Image">
+</div>
+
+<Footer />
+
 
 <style>
   /* Center all content and remove the list-style dots */
@@ -75,21 +99,3 @@
   }
 </style>
 
-<!-- Add the top image below the navigation -->
-<div class="centered-words">
-  <img class="top-image" src="images/index/top.jpg" alt="Top Image">
-  <ul>
-    {#each words as word (word.route)}
-      <li>
-        <a href={word.route} class="word" on:mouseenter={() => handleImageHover(word.route)} on:mouseleave={() => currentHoverRoute = ""}>
-          <img src={word.route === currentHoverRoute ? word.imgHoverSrc : word.imgSrc} alt={word.text} />
-        </a>
-      </li>
-    {/each}
-  </ul>
-</div>
-
-<!-- Add the bottom image below the footer -->
-<div class="centered-images">
-  <img src="images/index/bottom.jpg" alt="Bottom Image">
-</div>

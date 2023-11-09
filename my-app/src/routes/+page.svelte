@@ -3,6 +3,7 @@
 	import Form from "../lib/form.svelte";
 	import Bio from "../lib/bio.svelte";
     import Choice from "../lib/choice.svelte";
+    import Footer from "../lib/footer.svelte";
 </script>
 
 <Header />
@@ -20,6 +21,7 @@
 		<Form />
     </section>
 </main>
+<Footer />
 
 <style>
     section {

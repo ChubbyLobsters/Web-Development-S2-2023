@@ -1,39 +1,18 @@
 <!-- Footer.svelte -->
 <script>
-  import { onMount } from 'svelte';
-  import { writable } from 'svelte/store';
-
-  const currentPage = writable('');
-
   function scrollIntoView(target) {
     const el = document.querySelector(target);
     el.scrollIntoView({
       behavior: 'smooth'
     });
   }
-
-  onMount(() => {
-    // Set the initial value of the current page based on the window location
-    currentPage.set(window.location.pathname);
-  });
 </script>
 
 <footer>
   <img class="logo" src="images/main/logo.jpg" alt="Logo" />
-
-  {#if $currentPage === '/'}
-    <div class="footer-links">
-      <a href="/" on:click|preventDefault={() => scrollIntoView("#home")}><i class="fas fa-home logo"></i></a>
-      <a href="/about" on:click|preventDefault={() => scrollIntoView("#section-2")}><i class="fas fa-info-circle logo"></i></a>
-      <a href="/contact" on:click|preventDefault={() => scrollIntoView("#section-3")}><i class="fas fa-envelope logo"></i></a>
-    </div>
-  {:else}
-    <div class="footer-links">
-      <a href="/" on:click|preventDefault={() => scrollIntoView("#home")}><i class="fas fa-home logo"></i></a>
-      <a href="/" on:click|preventDefault={() => scrollIntoView("#top")}><i class="fas fa-arrow-up logo"></i></a>
-    </div>
-  {/if}
-
+  <div class="footer-links">
+    <a href="/" on:click|preventDefault={() => scrollIntoView("#home")}><i class="fas fa-home logo"></i></a>
+  </div>
   <p>&copy; 2023 Forgotten Dreams. All rights reserved.</p>
 </footer>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
