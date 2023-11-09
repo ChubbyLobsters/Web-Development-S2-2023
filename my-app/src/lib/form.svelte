@@ -7,6 +7,7 @@
   let submissionStatus = null;
 </script>
 
+
 <main>
   {#if submissionStatus}
     <p>{submissionStatus}</p>
@@ -35,13 +36,13 @@
 
 
 <style>
-  main {
+  main {  /* forms style sorced from stackOverflow */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 700px; /* Set a specific height to fit the image */
-    background-image: url("images/main/scribble2.jpg"); /* Replace with your image URL */
+    height: 700px; 
+    background-image: url("images/main/scribble2.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -67,8 +68,8 @@
   }
 
   textarea {
-    resize: none; /* Prevents stretching */
-    height: 150px; /* Set a fixed height for the textarea */
+    resize: none;
+    height: 150px; 
   }
 
   button {
