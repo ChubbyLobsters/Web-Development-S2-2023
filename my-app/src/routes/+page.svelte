@@ -10,7 +10,6 @@
 <main>
     <section id="section-1">
         <Choice />
-
     </section>
 
     <section id="section-2">

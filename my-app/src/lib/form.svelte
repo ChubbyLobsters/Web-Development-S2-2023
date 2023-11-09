@@ -1,101 +1,87 @@
 <script>
-    import { onMount } from "svelte";
-  
-    let formData = {
-      name: "",
-      email: "",
-      message: "",
-    };
-  
-    let submissionStatus = null;
-  
-    const handleSubmit = async () => {
-      // You would typically send this data to your server for email processing.
-      // This is a placeholder function and does not send actual emails.
-      try {
-        const response = await fetch("/your-email-endpoint", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
-  
-        if (response.ok) {
-          submissionStatus = "Success! Your message has been sent.";
-        } else {
-          submissionStatus = "Error sending your message.";
-        }
-      } catch (error) {
-        submissionStatus = "Error sending your message.";
-      }
-    };
-  
-    // Reset the form after submission
-    onMount(() => {
-      if (submissionStatus === "Success! Your message has been sent.") {
-        formData = {
-          name: "",
-          email: "",
-          message: "",
-        };
-      }
-    });
+  import { onMount } from "svelte";
+
+  let name = "";
+  let email = "";
+  let message = "";
+  let submissionStatus = null;
 </script>
 
-<style>
-    main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+<main>
+  {#if submissionStatus}
+    <p>{submissionStatus}</p>
+  {/if}
+  <form on:submit={handleSubmit}>
+    <label for="name">Name:</label>
+    <input type="text" id="name" bind:value={name} required />
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" bind:value={email} required />
   
-    form {
-      max-width: 400px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .input-group {
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
-    }
-
-    .bg-img {
-      background-image: url("form.jpg");
-      height: 800px;
-      width: 80%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-    }
-</style>
-
-<div class="bg-img">
-  <main>
-    {#if submissionStatus}
-      <p>{submissionStatus}</p>
-    {/if}
-    <form on:submit={handleSubmit}>
-      <div class="input-group">
-        <div class="left">
-          <label for="name">Name:</label>
-          <input type="text" id="name" bind:value={formData.name} required />
-        </div>
-        <div class="right">
-          <label for="email">Email:</label>
-          <input type="email" id="email" bind:value={formData.email} required />
-        </div>
-      </div>
-      <label for="message">Message:</label>
-      <textarea id="message" bind:value={formData.message} required></textarea>
+    <label for="message">Message:</label>
+    <textarea id="message" bind:value={message} required></textarea>
+  
+    {#if submissionStatus === "Sending..."}
+      <button type="submit" disabled>Sending...</button>
+    {:else}
       <button type="submit">Submit</button>
-    </form>
-  </main>
-</div>
+    {/if}
+    
+    {#if submissionStatus === "Error sending your message."}
+      <p class="error-message">Error sending your message.</p>
+    {/if}
+  </form>
+</main>
+
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px; /* Set a specific height to fit the image */
+    background-image: url("images/main/scribble2.jpg"); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
+
+  form {
+    max-width: 550px;
+    width: 80%;
+    padding: 20px;
+  }
+
+  label {
+    font-weight: bold;
+    color: #333;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  textarea {
+    resize: none; /* Prevents stretching */
+    height: 150px; /* Set a fixed height for the textarea */
+  }
+
+  button {
+    align-items: center;
+    width: 70%;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .error-message {
+    color: red;
+  }
+</style>
