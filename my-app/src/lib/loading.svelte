@@ -20,20 +20,20 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white; /* Use a solid white background */
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 9999;
-    animation: fadeInOut 8s linear forwards; /* Use "forwards" to keep final state */
-    pointer-events: none; /* Disable interaction for the entire overlay */
+    animation: fadeInOut 3.5s linear forwards; 
+    pointer-events: none; 
   }
 
   .centered-image {
     width: 250px;
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
     opacity: 0;
-    animation: fadeInImage 5s linear forwards; /* Use "forwards" to keep final state */
+    animation: fadeInImage 2.5s linear forwards; 
   }
 
   /* CSS animation for image fade-in */
@@ -46,16 +46,14 @@
     }
   }
 
-  /* CSS animation for overlay fade-in and fade-out */
+  /* CSS animation for overlay fade-in and smooth fade-out */
   @keyframes fadeInOut {
     0% {
       opacity: 1;
     }
-    99% {
-      opacity: 0; /* Almost immediately go to full transparency */
-    }
+    
     100% {
-      opacity: 0; /* Ensure opacity stays at 0 after animation */
+      opacity: 0; /* Gradually go to full transparency */
     }
   }
 </style>

@@ -17,8 +17,10 @@
   'images/genso/genso13.JPG',
   'images/genso/genso14.JPG',
 ];
-</script>
+import Loading from "../lib/loading.svelte";
+    </script>
 
+<Loading />
 <div class="profile-container">
   <div class="center-profile">
     <h2 class="profile-title">Gensō-tekina Kaosu 幻 想 的 な カ オ ス  </h2>
