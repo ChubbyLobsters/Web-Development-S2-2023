@@ -3,10 +3,10 @@
   
     let goal = "My ultimate ambition dances on the edge of whimsy and wonder. As the night's patron of unconventional arts, I aspire to one day craft prosthetics that are a fusion of art and function, like extensions of the human imagination. My dreams extend to the creation of enchanting body modding devices, where reality and fantasy intertwine to sculpt the human form into a canvas of self-expression."
   
-    let signatures = "WomenEatersOffical, MrWildFire, CY, ForGottenDreams. As forever burning citys to the ground in inspiration."
+    let signatures = "WomenEatersOffical, MrWildFire, CY, ForGottenDreams. As forever burning citys to the ground in inspiration."  // holding data for paragraphs will simplify later
   
-    let imageUrl1 = "images/main/portrait.jpg"; // Replace with the URL of your first image.
-    let imageUrl2 = "images/main/scribble1.jpg"; // Replace with the URL of your second image.
+    let imageUrl1 = "images/main/portrait.jpg"; 
+    let imageUrl2 = "images/main/scribble1.jpg"; 
   </script>
   
   <div class="container">
