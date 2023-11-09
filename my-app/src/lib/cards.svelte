@@ -2,7 +2,7 @@
 
 <script>
     import { onMount } from 'svelte';
-
+  
     let cards = [];
     let visibleCards = [];
     let currentPage = 1;
@@ -11,57 +11,76 @@
     const cardsPerPage = cardsPerRow * numRows;
     let selectedRarity = ''; // Store the selected rarity
     let searchQuery = ''; // Store the search query
-
-    onMount(async () => {
-        // Fetch data from the API
-        const response = await fetch('https://api.magicthegathering.io/v1/cards?contains=imageUrl');
-        const data = await response.json();
-
+  
+    function makeAjaxRequest(url, method, callback) {
+      const xhr = new XMLHttpRequest();
+      xhr.open(method, url, true);
+  
+      xhr.onload = function () {
+        if (xhr.status >= 200 && xhr.status < 300) {
+          const data = JSON.parse(xhr.responseText);
+          callback(data);
+        } else {
+          console.error('AJAX request failed:', xhr.status, xhr.statusText);
+        }
+      };
+  
+      xhr.onerror = function () {
+        console.error('AJAX request failed.');
+      };
+  
+      xhr.send();
+    }
+  
+    onMount(() => {
+      // Make an AJAX request to fetch data from the API
+      makeAjaxRequest('https://api.magicthegathering.io/v1/cards?contains=imageUrl', 'GET', (data) => {
         // Extract cards from the data
         cards = data.cards;
-
+  
         // Initialize the visible cards
         updateVisibleCards();
+      });
     });
-
+  
     function updateVisibleCards() {
-        const filteredCards = cards.filter(card => {
-            const matchesRarity = !selectedRarity || card.rarity === selectedRarity;
-            const matchesName = !searchQuery || card.name.toLowerCase().includes(searchQuery.toLowerCase());
-            return matchesRarity && matchesName;
-        });
-
-        const startIndex = (currentPage - 1) * cardsPerPage;
-        const endIndex = startIndex + cardsPerPage;
-        visibleCards = filteredCards.slice(startIndex, endIndex);
+      const filteredCards = cards.filter((card) => {
+        const matchesRarity = !selectedRarity || card.rarity === selectedRarity;
+        const matchesName = !searchQuery || card.name.toLowerCase().includes(searchQuery.toLowerCase());
+        return matchesRarity && matchesName;
+      });
+  
+      const startIndex = (currentPage - 1) * cardsPerPage;
+      const endIndex = startIndex + cardsPerPage;
+      visibleCards = filteredCards.slice(startIndex, endIndex);
     }
-
+  
     function nextPage() {
-        if (currentPage * cardsPerPage < visibleCards.length) {
-            currentPage++;
-            updateVisibleCards();
-        }
+      if (currentPage * cardsPerPage < visibleCards.length) {
+        currentPage++;
+        updateVisibleCards();
+      }
     }
-
+  
     function prevPage() {
-        if (currentPage > 1) {
-            currentPage--;
-            updateVisibleCards();
-        }
+      if (currentPage > 1) {
+        currentPage--;
+        updateVisibleCards();
+      }
     }
-
+  
     function onRarityChange(event) {
-        selectedRarity = event.target.value;
-        currentPage = 1; // Reset to the first page when changing rarity
-        updateVisibleCards();
+      selectedRarity = event.target.value;
+      currentPage = 1; // Reset to the first page when changing rarity
+      updateVisibleCards();
     }
-
+  
     function onSearchInputChange(event) {
-        searchQuery = event.target.value;
-        currentPage = 1; // Reset to the first page when changing search query
-        updateVisibleCards();
+      searchQuery = event.target.value;
+      currentPage = 1; // Reset to the first page when changing the search query
+      updateVisibleCards();
     }
-</script>
+  </script>
 
 <div class="container">
     <div class="grid">
