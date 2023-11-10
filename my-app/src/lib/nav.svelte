@@ -1,5 +1,4 @@
 <script>
-  // JavaScript function to scroll smoothly to a section
   function scrollIntoView({ target }) {
     const el = document.querySelector(target.getAttribute('href'));
     el.scrollIntoView({
@@ -8,123 +7,84 @@
   }
 </script>
 
-<header style="height: 220px;">
+<header>
   <div class="navWrapper" id="home">
-    <div class="clearfix">
-      <nav class="mainNav clearfix">
-        <nav>
-          <ul class="left-links">
-            <!-- Navigation links on the left side -->
-            <li><a href="/">Home</a></li>
-            <li><a href="/gallery-index">Gallery</a></li>
-          </ul>
-          <div class="logo-container">
-            <!-- Logo container in the middle -->
-            <img class="logo" src="images/main/logo.jpg" alt="Logo" />
-          </div>
-          <ul class="right-links">
-            <!-- Navigation links on the right side -->
-            <li><a href="#section-3" on:click|preventDefault={scrollIntoView}>Contact</a></li>
-            <li><a href="#section-2" on:click|preventDefault={scrollIntoView}>About</a></li>
-          </ul>
-        </nav>
-      </nav>
-    </div>
+    <nav class="mainNav">
+      <div class="left-links">
+        <ul>
+          <li><button on:click={() => window.location.href = '/'}>Home</button></li>
+          <li><button on:click={() => window.location.href = '/gallery-index'}>Gallery</button></li>
+        </ul>
+      </div>
+      <div class="logo-container">
+        <img class="logo" src="images/main/logo.jpg" alt="Logo" />
+      </div>
+      <div class="right-links">
+        <ul>
+          <li><button on:click|preventDefault={scrollIntoView}>Contact</button></li>
+          <li><button on:click|preventDefault={scrollIntoView}>About</button></li>
+        </ul>
+      </div>
+    </nav>
   </div>
 </header>
 
 <style>
-  .clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-  }
-
-  * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  .logo {
-    max-width: 160px;
-    margin-top: 30px;
-    transition: all 0.5s ease;
-  }
-
-  nav {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  header nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-  }
-
-  header nav ul li {
-    margin: 0;
-    text-align: center;
-    transition: all 0.5s ease;
-  }
-
-  header nav ul li:hover {
-    background: none;
-    transform: scale(1.1);
-    transition: transform 1s;
-  }
-
-  header nav ul li a {
-    text-decoration: none;
-    padding: 15px 20px;
-    color: #000000;
-    margin: 0;
-    text-transform: uppercase;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1rem;
-    transition: font-size 0.5s ease, padding 0.5s ease;
-  }
-
-  header nav ul li a:focus {
-    outline: none;
-  }
-
   header {
     background-color: rgb(255, 255, 255);
     margin-bottom: 20px;
     position: relative;
   }
 
-  .left-links {
-    float: left;
+  .mainNav {
+    width: 100%; /* Make the navigation bar 100% of the screen width */
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .right-links {
-    float: right;
+  .left-links ul,
+  .right-links ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
   }
 
-  @media screen and (max-width: 768px) {
+  .left-links li,
+  .right-links li {
+    text-align: center;
+    padding: 10px 15px;
+  }
+
+  .left-links button,
+  .right-links button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .logo {
+    max-width: 160px;
+    max-height: 60px;
+  }
+
+  @media (max-width: 768px) {
+    .left-links li,
+    .right-links li {
+      font-size: 14px; /* Reduce font size for smaller screens */
+    }
+
+    .left-links button,
+    .right-links button {
+      font-size: 14px; /* Reduce font size for smaller screens */
+    }
+
     .logo {
-      max-width: 120px;
-      margin-top: 15px;
-    }
-
-    header nav ul li {
-      padding: 10px 15px; /* Reduce padding */
-    }
-
-    header nav ul li a {
-      font-size: 0.8rem; /* Reduce font size */
+      max-width: 120px; /* Reduce logo size for smaller screens */
+      max-height: 45px;
     }
   }
 </style>

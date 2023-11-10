@@ -19,8 +19,9 @@
   }
 
   .header img {
-    max-width: 70%;
+    max-width: 60%;
     max-height: 80%;
+    padding-bottom: 200px;
   }
 
   @media screen and (max-width: 768px) {

@@ -40,17 +40,9 @@
   }
 </script>
 
-<main style="height: 100px;"> <!-- Adjusted height -->
+<main>
   <div class="button-section">
-    <div
-      class="image-box"
-      on:mouseover={handleHover1}
-      on:mouseout={handleUnhover1}
-      on:focus={handleFocus1}
-      on:blur={handleBlur1}
-      role="button"
-      tabindex="0"
-    >
+    <div class="image-box" on:mouseover={handleHover1} on:mouseout={handleUnhover1} on:focus={handleFocus1} on:blur={handleBlur1} role="button" tabindex="0">
       <a href={route1}>
         <img src={isHovered1 ? "images/main/choiceHover.jpg" : imageSrc1} alt="Choice" aria-label="Choice" />
       </a>
@@ -60,15 +52,7 @@
       <img src={imageSrc2} alt="Pick" />
     </div>
 
-    <div
-      class="image-box"
-      on:mouseover={handleHover3}
-      on:mouseout={handleUnhover3}
-      on:focus={handleFocus3}
-      on:blur={handleBlur3}
-      role="button"
-      tabindex="0"
-    >
+    <div class="image-box" on:mouseover={handleHover3} on:mouseout={handleUnhover3} on:focus={handleFocus3} on:blur={handleBlur3} role="button" tabindex="0">
       <a href={route2}>
         <img src={isHovered3 ? "images/main/fateHoverd.jpg" : imageSrc3} alt="Fate" aria-label="Fate" />
       </a>
@@ -80,67 +64,66 @@
   main {
     text-align: center;
     height: 100%;
+    margin-bottom: 10px; /* Add margin after the signatures */
   }
 
   .button-section {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Added for responsiveness */
-    max-width: 70%; /* Set a maximum width to keep images within the section */
-    margin: 0 auto; /* Center the section horizontally */
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin: 0 auto;
   }
 
   .image-box {
     text-decoration: none;
     display: inline-block;
-    flex: 1; /* Added for responsiveness */
-    margin: 10px; /* Default margin */
+    flex: 1;
   }
 
-  .image-box:hover,
-  .image-box:focus {
+  .image-box:hover, .image-box:focus {
     opacity: 0.7;
   }
 
   .image-box img {
-    max-width: 70%; /* Added for responsiveness */
-    height: auto; /* Added for responsiveness */
-    transition: all 0.3s ease-in-out; /* Added for smooth transition */
+    max-width: 90%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
   }
 
   .image-box.pick img {
-    max-width: 100%; /* Set a fixed maximum width for the "Pick" image */
+    max-width: 100%;
     max-height: 35%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
   }
 
   @media screen and (max-width: 768px) {
     .image-box {
-      margin: 10px; /* Reduced margin for smaller screens */
+      margin: 10px;
     }
 
     .image-box img {
-      max-width: 80%; /* Increase max-width for smaller screens */
+      max-width: 80%;
     }
   }
 
   @media screen and (max-width: 640px) {
     .image-box img {
-      max-width: 75%; /* Increase max-width for smaller screens */
+      max-width: 75%;
       max-height: 80%;
     }
   }
 
   @media screen and (max-width: 425px) {
     .image-box img {
-      max-width: 90%; /* Increase max-width for smaller screens */
+      max-width: 90%;
       max-height: 90%;
     }
   }
 
-    @media screen and (max-width: 320px) {
+  @media screen and (max-width: 320px) {
     .image-box img {
-      max-width: 90%; /* Increase max-width for smaller screens */
+      max-width: 90%;
       max-height: 90%;
     }
   }

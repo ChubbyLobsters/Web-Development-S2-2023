@@ -42,8 +42,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 50%;
-    padding: 0 20px;
+    max-width: 50%; 
   }
 
   .compact-section, .goal-section, .signatures-section {
@@ -51,7 +50,7 @@
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
   }
 
   .compact-section {
