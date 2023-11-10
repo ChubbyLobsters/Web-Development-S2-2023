@@ -1,11 +1,13 @@
 <script>
-  function scrollIntoView({ target }) {
-    const el = document.querySelector(target.getAttribute('href'));
+  function scrollIntoView(target) {
+    const sectionId = `section-${target}`;
+    const el = document.getElementById(sectionId);
     el.scrollIntoView({
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   }
 </script>
+
 
 <header>
   <div class="navWrapper" id="home">
@@ -21,13 +23,12 @@
       </div>
       <div class="right-links">
         <ul>
-          <li><button on:click|preventDefault={scrollIntoView}>Contact</button></li>
-          <li><button on:click|preventDefault={scrollIntoView}>About</button></li>
+          <li><button on:click|preventDefault={() => scrollIntoView(2)}>About</button></li>
+          <li><button on:click|preventDefault={() => scrollIntoView(3)}>Contact</button></li>
+          
         </ul>
       </div>
-    </nav>
-  </div>
-</header>
+    </header>
 
 <style>
   header {
