@@ -37,7 +37,7 @@ The project is a web application for displaying art in galleries and for contact
 4. Open a web browser and visit http://localhost:5000 to access the application.
 
 --------------------------------------------------
-Research: Web-Development-S2-2023/my-app/Storeage/planning/
+Research: Web-Development-S2-2023/my-app/Storeage/planning/ (research 1, research 2) pdf
 
 I designed 'Dead Dreams,' a website that truly embodies the essence of obscure art through its bold and black-and-white simplistic gallery. The website is a testament to the culmination of extensive research and meticulous annotation, which guided its development.
 
