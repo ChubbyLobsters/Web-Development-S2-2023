@@ -53,15 +53,15 @@ file is locaded in /my-app rather than the main.
 - fix layouts and issues around it.
 - makeloading screen load other than on refresh.
 
-- ![image](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/7aed9842-671d-47d0-a780-61f1ce3cb203)
 
-- ![image](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/0b8f2b50-080e-4e4f-949c-139b0ee386dd)
-
-- ![image](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/f2ecbbc2-af78-4f39-97c3-3268e9c3ae64)
-
-- ![image](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/b23db0ae-ce49-4d3f-a9da-cb40d1bb9e48)
-
-- ![Uploading image.png…]()
+  ![i**Image Gallery:**
+![Image 1](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/7aed9842-671d-47d0-a780-61f1ce3cb203)
+![Image 2](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/0b8f2b50-080e-4e4f-949c-139b0ee386dd)
+![Image 3](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/f2ecbbc2-af78-4f39-97c3-3268e9c3ae64)
+![Image 4](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/b23db0ae-ce49-4d3f-a9da-cb40d1bb9e48)
+![Image 5](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/71104ced-72ea-4b2c-91c1-6cbf4a20da4f)
+![Image 6](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/467fa030-1a3c-41bc-a757-2d216f10c3ae)
+![Image 7](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/ee3d469e-66dc-4fe6-9d11-bbb5cd23950d)
 
 
 
