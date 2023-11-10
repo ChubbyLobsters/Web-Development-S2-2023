@@ -11,7 +11,6 @@ Type/Changes/Purpose
 - Refactor: Code that has no features changed
 - Feature: Added a new feature to the application
 - Change: Code improvement that enhances existing features
-- 
 -----------------------------------------------
 
 **Project Overview**
@@ -26,8 +25,9 @@ The project is a web application for displaying art in galleries and for contact
 ------------------------------------------------
 **How to Install/Run the Application:**
 1. Clone the repository to your local machine.
-2. Open a terminal and navigate to the project directory.
-3. Run the following commands:
+2. Open a terminal and navigate to the project directory. (Web-Devalopment-S2-2023/my-app)
+   `cd .\Web-Development-S2-2023\my-app\`
+4. Run the following commands:
 
 
 `npm install`
@@ -42,6 +42,7 @@ The project is a web application for displaying art in galleries and for contact
 Loading screen dose not load unless page is refreshed.
 Form is not responsive with image, but functions as intended.
 problems in the terminal stating incorrect usage of code.
+file is locaded in /my-app rather than the main.
 
 
 **Planned/Future Features:**
