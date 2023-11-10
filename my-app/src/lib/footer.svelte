@@ -1,4 +1,4 @@
-<!-- Footer.svelte -->
+<!-- footer.svelte -->
 <script>
   const scrollIntoView = (target) => {
     const el = document.querySelector(target);
@@ -23,7 +23,7 @@
 
 <style>
   p {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 16px;
     color: #000000;
   }
@@ -44,7 +44,7 @@
     color: #000000;
     text-decoration: none;
     margin: 0 10px; /* Reduced margin */
-    font-size: 18px; /* Reduced font size */
+    font-size: 12px; /* Reduced font size */
     transition: border-bottom-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
   }
 
@@ -55,7 +55,7 @@
   }
 
   .logo {
-    max-width: 105px;
+    max-width: 70px;
     transition: transform 0.4s ease;
   }
 
@@ -63,11 +63,39 @@
     transform: scale(1.1);
   }
 
+  @media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    footer {
+      padding: 10px; /* Reduce the padding */
+    }
+
+    .footer-links a {
+      font-size: 14px; /* Reduce the font size */
+    }
+
+    .logo {
+      width: 60px; /* Reduce the logo size */
+    }
+    
+    p {
+
+      font-size: 10px;
+    }
+  }
+
+
   @media (max-width: 600px) {
     /* Adjustments for smaller screens */
+    footer {
+      padding-top: 60px; /* Reduce the padding */
+    }
+
     .footer-links a {
-      margin: 0 5px; /* Further reduced margin */
-      font-size: 16px; /* Further reduced font size */
+      font-size: 10px; /* Reduce the font size */
+    }
+
+    .logo {
+      width: 55px; /* Reduce the logo size */
     }
   }
 </style>

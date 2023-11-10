@@ -1,8 +1,7 @@
 <script>
   import Layout from '../../lib/galleryIndex.svelte';
 
-
-  let myImages = [
+  const myImages = [
     'images/bld/BLD1.png',
     'images/bld/BLD12.png',
     'images/bld/BLD2.png',
@@ -58,4 +57,33 @@
   line-height: 1.5; /* Increased line height for readability */
 }
 
+@media (max-width: 768px) {
+  .profile-title {
+    font-size: 24px; /* Reduce font size for smaller screens */
+  }
+
+  .profile-blurb {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-title {
+    font-size: 24px; 
+  }
+
+  .profile-blurb {
+    font-size: 13px; 
+  }
+}
+
+@media (max-width: 425px) {
+  .profile-title {
+    font-size: 20px; 
+  }
+
+  .profile-blurb {
+    font-size:9px; 
+  }
+}
 </style>

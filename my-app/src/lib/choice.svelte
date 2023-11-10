@@ -40,20 +40,61 @@
   }
 </script>
 
+<main style="height: 100px;"> <!-- Adjusted height -->
+  <div class="button-section">
+    <div
+      class="image-box"
+      on:mouseover={handleHover1}
+      on:mouseout={handleUnhover1}
+      on:focus={handleFocus1}
+      on:blur={handleBlur1}
+      role="button"
+      tabindex="0"
+    >
+      <a href={route1}>
+        <img src={isHovered1 ? "images/main/choiceHover.jpg" : imageSrc1} alt="Choice" aria-label="Choice" />
+      </a>
+    </div>
+
+    <div class="image-box pick">
+      <img src={imageSrc2} alt="Pick" />
+    </div>
+
+    <div
+      class="image-box"
+      on:mouseover={handleHover3}
+      on:mouseout={handleUnhover3}
+      on:focus={handleFocus3}
+      on:blur={handleBlur3}
+      role="button"
+      tabindex="0"
+    >
+      <a href={route2}>
+        <img src={isHovered3 ? "images/main/fateHoverd.jpg" : imageSrc3} alt="Fate" aria-label="Fate" />
+      </a>
+    </div>
+  </div>
+</main>
+
 <style>
   main {
     text-align: center;
+    height: 100%;
   }
 
   .button-section {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Added for responsiveness */
+    max-width: 70%; /* Set a maximum width to keep images within the section */
+    margin: 0 auto; /* Center the section horizontally */
   }
 
   .image-box {
-    margin: 60px;
     text-decoration: none;
     display: inline-block;
+    flex: 1; /* Added for responsiveness */
+    margin: 10px; /* Default margin */
   }
 
   .image-box:hover,
@@ -61,44 +102,46 @@
     opacity: 0.7;
   }
 
-  .image-box.pick:hover,
-  .image-box.pick:focus {
-    opacity: 1;
-  }
-
   .image-box img {
-    width: 440px;
-    height: 680px;
+    max-width: 70%; /* Added for responsiveness */
+    height: auto; /* Added for responsiveness */
+    transition: all 0.3s ease-in-out; /* Added for smooth transition */
   }
 
   .image-box.pick img {
-    width: 280px;
-    height: 600px;
+    max-width: 100%; /* Set a fixed maximum width for the "Pick" image */
+    max-height: 35%;
+    height: auto; /* Maintain aspect ratio */
   }
 
-  .image-box:last-child img {
-    width: 390px;
-    height: 580px;
-    margin-top: 60px;
+  @media screen and (max-width: 768px) {
+    .image-box {
+      margin: 10px; /* Reduced margin for smaller screens */
+    }
+
+    .image-box img {
+      max-width: 80%; /* Increase max-width for smaller screens */
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .image-box img {
+      max-width: 75%; /* Increase max-width for smaller screens */
+      max-height: 80%;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .image-box img {
+      max-width: 90%; /* Increase max-width for smaller screens */
+      max-height: 90%;
+    }
+  }
+
+    @media screen and (max-width: 320px) {
+    .image-box img {
+      max-width: 90%; /* Increase max-width for smaller screens */
+      max-height: 90%;
+    }
   }
 </style>
-
-<main>
-  <div class="button-section">
-    <div class="image-box" on:mouseover={handleHover1} on:mouseout={handleUnhover1} on:focus={handleFocus1} on:blur={handleBlur1} role="button">
-      <a href={route1}>
-        <img src={isHovered1 ? "images/main/choiceHover.jpg" : imageSrc1} alt="Choice" tabindex="0" aria-label="Choice" />
-      </a>
-    </div>
-    
-    <div class="image-box pick">
-      <img src={imageSrc2} alt="Pick" />
-    </div>
-    <div class="image-box" on:mouseover={handleHover3} on:mouseout={handleUnhover3} on:focus={handleFocus3} on:blur={handleBlur3} role="button">
-      <a href={route2}>
-        <img src={isHovered3 ? "images/main/fateHoverd.jpg" : imageSrc3} alt="Fate" tabindex="0" aria-label="Fate" />
-      </a>
-    </div>
-    
-  </div>
-</main>
