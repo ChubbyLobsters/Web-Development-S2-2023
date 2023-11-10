@@ -52,3 +52,18 @@ file is locaded in /my-app rather than the main.
 - Add more galleries and make the forms image work.
 - fix layouts and issues around it.
 - makeloading screen load other than on refresh.
+
+- ![image](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/7aed9842-671d-47d0-a780-61f1ce3cb203)
+
+- ![image](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/0b8f2b50-080e-4e4f-949c-139b0ee386dd)
+
+- ![image](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/f2ecbbc2-af78-4f39-97c3-3268e9c3ae64)
+
+- ![image](https://github.com/ChubbyLobsters/Web-Development-S2-2023/assets/126432615/b23db0ae-ce49-4d3f-a9da-cb40d1bb9e48)
+
+- ![Uploading image.png…]()
+
+
+
+
+
