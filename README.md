@@ -55,7 +55,7 @@ Loading screen dose not load unless page is refreshed.
 Form is not responsive with image, but functions as intended.
 problems in the terminal stating incorrect usage of code.
 file is locaded in /my-app rather than the main.
-nav is displayed at a smaller ratio as I designed site for diffrent size.
+**nav is displayed at a smaller ratio as I designed site for 1024 px by 944 pixles and smaller on accident**
 
 
 **Planned/Future Features:**
