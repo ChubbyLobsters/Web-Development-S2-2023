@@ -39,6 +39,9 @@ The project is a web application for displaying art in galleries and for contact
 --------------------------------------------------
 
 **Known Bugs/Issues:**
+Loading screen dose not load unless page is refreshed.
+Form is not responsive with image, but functions as intended.
+problems in the terminal stating incorrect usage of code.
 
 
 **Planned/Future Features:**
