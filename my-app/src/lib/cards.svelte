@@ -1,8 +1,6 @@
 <!-- Cards.svelte -->
-
 <script>
-  import { onMount } from 'svelte';
-  import { afterUpdate } from 'svelte';
+  import { onMount, afterUpdate } from 'svelte';
 
   let cards = [];
   let visibleCards = [];
@@ -10,87 +8,46 @@
   const cardsPerRow = 3;
   const numRows = 2;
   const cardsPerPage = cardsPerRow * numRows;
-  let selectedRarity = ''; // Store the selected rarity
-  let searchQuery = ''; // Store the search query
-  let isFiltering = false; // Track whether filtering is active
+  let selectedRarity = '';
+  let searchQuery = '';
+  let isFiltering = false;
 
-  function makeAjaxRequest(url, method, callback) {
-      const xhr = new XMLHttpRequest();
-      
-      xhr.open(method, url, true);
-
-      xhr.onload = function () {
-          if (xhr.status >= 200 && xhr.status < 300) {
-              const data = JSON.parse(xhr.responseText);
-              callback(data);
-          } else {
-              console.error('AJAX request failed:', xhr.status, xhr.statusText);
-          }
-      };
-
-      xhr.onerror = function () {
-          console.error('AJAX request failed.');
-      };
-
-      xhr.send();
+  async function makeFetchRequest(url) {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        return data.cards;
+      } else {
+        console.error('Fetch request failed:', response.status, response.statusText);
+        return [];
+      }
+    } catch (error) {
+      console.error('Fetch request failed:', error);
+      return [];
+    }
   }
 
-  onMount(() => {
-      // Make an AJAX request to fetch data from the API
-      makeAjaxRequest('https://api.magicthegathering.io/v1/cards?contains=imageUrl', 'GET', (data) => {
-          // Extract cards from the data
-          cards = data.cards;
-          
-          // Initialize the visible cards
-          updateVisibleCards();
-      });
+  onMount(async () => {
+    try {
+      const data = await makeFetchRequest('https://api.magicthegathering.io/v1/cards?contains=imageUrl');
+      cards = data;
+      updateVisibleCards();
+    } catch (error) {
+      console.error('Error in onMount:', error);
+    }
   });
 
   function updateVisibleCards() {
-      const startIndex = (currentPage - 1) * cardsPerPage;
-      const endIndex = startIndex + cardsPerPage;
-      visibleCards = cards.slice(startIndex, endIndex);
+    const startIndex = (currentPage - 1) * cardsPerPage;
+    const endIndex = startIndex + cardsPerPage;
+    visibleCards = cards.slice(startIndex, endIndex);
   }
 
-  function nextPage() {
-      if (currentPage * cardsPerPage < cards.length) {
-          currentPage++;
-          updateVisibleCards();
-      }
-  }
-
-  function prevPage() {
-      if (currentPage > 1) {
-          currentPage--;
-          updateVisibleCards();
-      }
-  }
-
-  function onRarityChange(event) {
-      selectedRarity = event.target.value;
-      currentPage = 1; // Reset to the first page when changing rarity
-      updateVisibleCards();
-  }
-
-  function onSearchInputChange(event) {
-      searchQuery = event.target.value;
-      isFiltering = true; // Set filtering to true when the user types
-  }
-
-  // Use the afterUpdate lifecycle function to handle search filtering
-  afterUpdate(() => {
-      if (isFiltering) {
-          currentPage = 1; // Reset to the first page when changing the search query
-          updateVisibleCards();
-          isFiltering = false; // Reset filtering state
-      }
-  });
-
-  function search() {
-      currentPage = 1; // Reset to the first page when performing a new search
-      updateVisibleCards();
-  }
 </script>
+
+
+
 
 <div class="container">
   <div class="grid">
