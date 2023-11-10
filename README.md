@@ -37,12 +37,25 @@ The project is a web application for displaying art in galleries and for contact
 4. Open a web browser and visit http://localhost:5000 to access the application.
 
 --------------------------------------------------
+Research: Web-Development-S2-2023/my-app/Storeage/planning/
+
+I designed 'Dead Dreams,' a website that truly embodies the essence of obscure art through its bold and black-and-white simplistic gallery. The website is a testament to the culmination of extensive research and meticulous annotation, which guided its development.
+
+My research journey began with a deep dive into various artistic and design movements, particularly focusing on obscure and lesser-known artists and their works. This comprehensive exploration laid the groundwork for the distinct aesthetic of the website. Annotations were an integral part of my research process, helping me collect and organize valuable information. They served as a reference point during the website's development, housing details about design elements, inspiration sources, and notes on the artistic movements that influenced the project.
+
+What sets 'Dead Dreams' apart from other websites is its unique approach to layout and content presentation. On the homepage, you can observe the deliberate discomforting yet beautiful and intriguing spaces between the content. This intentional design choice draws visitors into a captivating narrative and encourages them to explore further. You can see the influence of the principles gleaned from the annotated sites in these design decisions.
+
+Notably dueing my research, each website had its distinct character and purpose. One site was intentionally plain, while another was complex and artistic, filled with intricate design elements. However, all three shared the common thread of featuring galleries. My goal was to find the perfect balance between these different design philosophies, creating a website that resonates with the essence of obscure art, while offering a unique and engaging experience for visitors.
+
+Additionally, you can see the annotations and ideas from the principles on the annotated sites reflected in the design of 'Dead Dreams,' creating a cohesive and captivating online platform
+
 
 **Known Bugs/Issues:**
 Loading screen dose not load unless page is refreshed.
 Form is not responsive with image, but functions as intended.
 problems in the terminal stating incorrect usage of code.
 file is locaded in /my-app rather than the main.
+nav is displayed at a smaller ratio as I designed site for diffrent size.
 
 
 **Planned/Future Features:**
